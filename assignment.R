@@ -1,3 +1,5 @@
+library(reshape2)
+library(dplyr)
 id <- c(1,2,3,4,5)
 names <- c("frank","jim","albert","tintin","sam")
 section <- c("A","B","B","C","A")
