@@ -23,12 +23,12 @@ newdf = cbind(newdf,df2)
 #subset of dataframe
 subdf <- subset(newdf,weight>75,select = c(names,section))
 
-#chnaging the value of 3rd row 2nd column
+#changing the value of 3rd row 2nd column
 newdf[3,2] = "seema"
 
 #deleting last row
 del = newdf[-6,]
 
-#meling and dcast
+#melting and dcast
 resh<- melt(newdf,id.vars = c("id","names","place"),measure.vars = c("section","weight"))
 deresh = dcast(resh,id + names + place ~...)
