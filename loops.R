@@ -20,7 +20,7 @@ if(x>y && x>z){
   print("third number is bigger")
 }
 
-# sum of first n natural numbers
+# sum and avg of first n natural numbers
 n = readline(prompt = "Enter a number")
 n = as.integer(n)
 sum=0
@@ -28,7 +28,7 @@ for(i in 1:n){
   sum = sum + i;
 }
 print(sum)
-
+print(sum/n)
 
 
 
